@@ -1,6 +1,6 @@
-name: "compressed-size-action"
+name: "insight-compressed-size-action"
 description: "Get compressed size differences for every PR"
-author: "Jason Miller"
+author: "Insight Engineering"
 branding:
   icon: "archive"
   color: "purple"
