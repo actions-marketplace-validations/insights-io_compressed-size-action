@@ -88,6 +88,30 @@ exports[`diffTable 5`] = `
 `;
 
 exports[`diffTable 6`] = `
+"# Test title 
+
+ **Size Change:** +9 B (0%) 
+
+**Total Size:** 4.8 kB
+
+| Filename | Size | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`one.js\` | 5 kB | +2.5 kB (50%) | 🆘 |
+| \`two.js\` | -5 kB | -2.5 kB (50%) | 🆘 |
+| \`four.js\` | 4.5 kB | +9 B (0%) |  |
+
+<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
+
+| Filename | Size | Change |
+| :--- | :---: | :---: |
+| \`three.js\` | 300 B | 0 B |
+
+</details>
+
+"
+`;
+
+exports[`diffTable 7`] = `
 "**Size Change:** 0 B 
 
 **Total Size:** 4.8 kB
@@ -108,7 +132,7 @@ exports[`diffTable 6`] = `
 "
 `;
 
-exports[`diffTable 7`] = `
+exports[`diffTable 8`] = `
 "**Size Change:** 0 B 
 
 **Total Size:** 300 B
