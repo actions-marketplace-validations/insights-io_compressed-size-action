@@ -110,12 +110,13 @@ async function run(octokit, context, token) {
   console.log(cliText);
   endGroup();
 
+  const title = getInput("title");
   const markdownDiff = diffTable(diff, {
     collapseUnchanged: toBool(getInput("collapse-unchanged")),
     omitUnchanged: toBool(getInput("omit-unchanged")),
     showTotal: toBool(getInput("show-total")),
     minimumChangeThreshold: parseInt(getInput("minimum-change-threshold"), 10),
-    title: getInput("title"),
+    title,
   });
 
   let outputRawMarkdown = false;
