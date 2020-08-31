@@ -156,7 +156,7 @@ async function run(octokit, context, token) {
           c.user.type === "Bot" &&
           /<sub>[\s\n]*(compressed|gzip)-size-action/.test(c.body)
         ) {
-          if (!title || c.body.startaWith(title)) {
+          if (!title || c.body.startsWith(title)) {
             commentId = c.id;
             break;
           }
